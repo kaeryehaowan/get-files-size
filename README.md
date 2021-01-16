@@ -1,5 +1,6 @@
 ### get-files-size
 获取路径下指定类型的文件总大小，不会计算文件夹大小。例如,
+```
 └─ src
     ├── style
     |  └── a.css
@@ -8,11 +9,16 @@
     |  ├── utils.js
     |  └── shop.js
     └── package.json
+```
 有 /src 目录，目录下有 /style 与 /js 两个文件夹和一个 package.json文件。当使用 
 ```js
 get-files-size ./src  -t js
 ```
-只会计算 ./src/js/index.js ./src/js/utils.js ./src/js/shop.js 三个文件的大小，并相加，不会计算 ./src/js/ 文件夹的大小。
+只会计算   
+./src/js/index.js   
+./src/js/utils.js   
+./src/js/shop.js   
+三个文件的大小，并相加，不会计算 ./src/js/ 文件夹的大小。
 
 ### Installation
 ```js
@@ -44,4 +50,4 @@ get-files-size -p ./src  -t .js,.css,html,json -u K -i /node_modules/ -c
 | -t[type] | 文件类型，取后缀，例如 css、js、png等，符号点[.]可省略 |
 | -u[unit] | 文件大小单位，B K M G |
 | -i[ignore] | 需要忽略的路径，例如 node_modules |
-| -c[chalk] | 是否需要打印 |
+| -c[chalk] | 是否需要打印参与计算的文件明细 |
