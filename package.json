@@ -1,0 +1,38 @@
+{
+  "name": "get-files-size",
+  "version": "1.0.0",
+  "description": "获取路径下指定类型的文件总大小",
+  "main": "src/index.js",
+  "bin": {
+    "get-files-size": "bin/index.js"
+  },
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "lib/*.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaeryehaowan/get-files-size.git"
+  },
+  "keywords": [
+    "get",
+    "files",
+    "file",
+    "size",
+    "cli"
+  ],
+  "author": "kael",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaeryehaowan/get-files-size/issues"
+  },
+  "homepage": "https://github.com/kaeryehaowan/get-files-size#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^7.0.0",
+    "tiny-each-async": "^2.0.3"
+  }
+}
